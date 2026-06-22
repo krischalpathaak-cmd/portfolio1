@@ -251,7 +251,6 @@
     $('.home-name')?.classList.add('reveal');
     $('.home-animated-wrap')?.classList.add('reveal');
     $('.home-bio')?.classList.add('reveal');
-    $('.home-actions')?.classList.add('reveal');
     $('.home-visual')?.classList.add('reveal-scale');
 
     /* About */
