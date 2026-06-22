@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'none'; form-action 'none'; frame-src 'none';">
+  <meta name="description" content="Krischal Pathak — Developer from Kathmandu, Nepal. Building web apps and embedded systems.">
+  <title>Krischal Pathak | Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <div class="sidebar-profile">
+        <div class="sidebar-avatar">
+          <img src="images/profile.jpg" alt="Krischal Pathak">
+          <div class="sidebar-avatar-ring">          </div>
+          <div class="sidebar-active-badge">Active</div>
+        </div>
+        <h2 class="sidebar-name">Krischal Pathak</h2>
+        <div class="sidebar-search">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search..." readonly>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav" id="sidebarNav">
+        <a href="#home" class="nav-link active" data-section="home"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="#about" class="nav-link" data-section="about"><i class="fas fa-user"></i><span>About</span></a>
+        <a href="#skills" class="nav-link" data-section="skills"><i class="fas fa-code"></i><span>Skills</span></a>
+        <a href="#education" class="nav-link" data-section="education"><i class="fas fa-graduation-cap"></i><span>Education</span></a>
+        <a href="#experience" class="nav-link" data-section="experience"><i class="fas fa-briefcase"></i><span>Experience</span></a>
+        <a href="#projects" class="nav-link" data-section="projects"><i class="fas fa-folder-open"></i><span>Projects</span></a>
+        <a href="#services" class="nav-link" data-section="services"><i class="fas fa-cog"></i><span>Services</span></a>
+
+      </nav>
+
+      <div class="sidebar-social">
+        <span class="sidebar-social-label">Connect</span>
+        <div class="sidebar-social-icons">
+          <a href="mailto:krischalpathak@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/krischalpathaak-cmd" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/pathakkrischal/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1LYrqgDnLX/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="status-card" id="statusCard">
+    <div class="status-card-indicator">
+      <span class="status-dot"></span>
+    </div>
+    <div class="status-card-status">STATUS: CODING...</div>
+    <div class="status-card-clock">
+      <span id="clockDisplay">00:00</span>
+      <span class="clock-suffix">AM</span>
+    </div>
+    <div class="status-card-tagline">Building ideas into reality.</div>
+  </div>
+
+  <main class="main-content">
+
+    <section class="section home-section" id="home">
+      <div class="container home-grid">
+        <div class="home-text">
+          <span class="home-greeting">Hello, I'm</span>
+          <h1 class="home-name">Krischal Pathak</h1>
+          <div class="home-animated-wrap">
+            <span class="home-animated" id="homeAnimated"></span>
+          </div>
+          <p class="home-bio">Developer from Kathmandu, Nepal. I build web apps and embedded systems that solve real problems.</p>
+          <div class="home-buttons">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="resume/resume.pdf" class="btn btn--outline" download><i class="fas fa-download"></i> Resume</a>
+          </div>
+          <div class="home-social-links">
+            <a href="mailto:krischalpathak@gmail.com" class="home-social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/krischalpathaak-cmd" target="_blank" rel="noopener noreferrer" class="home-social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/pathakkrischal/" target="_blank" rel="noopener noreferrer" class="home-social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1LYrqgDnLX/" target="_blank" rel="noopener noreferrer" class="home-social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <a href="mailto:krischalpathak@gmail.com" class="home-email-link">krischalpathak@gmail.com</a>
+        </div>
+        <div class="home-visual">
+          <div class="home-avatar">
+            <img src="images/profile.jpg" alt="Krischal Pathak">
+            <div class="home-avatar-ring"></div>
+          </div>
+          <div class="home-active-badge">Active</div>
+          <div class="home-availability-badge">Available for projects</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">— ABOUT</span>
+          <h2 class="section-title">Who I Am</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I'm studying Electronics, Communication &amp; Information Engineering at <strong>Advanced College of Engineering and Management</strong> in Kalanki, Kathmandu. I've been building things since high school — web apps, IoT prototypes, whatever seemed interesting at the time.</p>
+            <p>Right now I'm into React, figuring out better ways to build UIs, and exploring where web development and embedded systems overlap.</p>
+            <div class="about-info-grid">
+              <div class="about-info-item">
+                <span class="about-info-label">Name</span>
+                <span class="about-info-value">Krischal Pathak</span>
+              </div>
+              <div class="about-info-item">
+                <span class="about-info-label">Location</span>
+                <span class="about-info-value">Kathmandu, Nepal</span>
+              </div>
+              <div class="about-info-item">
+                <span class="about-info-label">Field</span>
+                <span class="about-info-value">Web &amp; IoT</span>
+              </div>
+              <div class="about-info-item">
+                <span class="about-info-label">Email</span>
+                <span class="about-info-value">krischalpathak@gmail.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="about-stat-card">
+              <span class="about-stat-num" data-target="3">0</span>
+              <span class="about-stat-label">Projects</span>
+            </div>
+            <div class="about-stat-card">
+              <span class="about-stat-num" data-target="1">0</span>
+              <span class="about-stat-label">Recognition</span>
+            </div>
+            <div class="about-stat-card">
+              <span class="about-stat-num" data-target="0">0</span>
+              <span class="about-stat-label">Certification</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">— SKILLS</span>
+          <h2 class="section-title">What I Work With</h2>
+          <p class="section-subtitle">Technologies and tools I've picked up along the way.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3 class="skill-group-title">Frontend</h3>
+            <div class="skill-boxes">
+              <div class="skill-box" data-percent="85"><span class="skill-box-label">HTML/CSS</span><span class="skill-box-fill"></span></div>
+              <div class="skill-box" data-percent="75"><span class="skill-box-label">JavaScript</span><span class="skill-box-fill"></span></div>
+              <div class="skill-box" data-percent="60"><span class="skill-box-label">React</span><span class="skill-box-fill"></span></div>
+              <div class="skill-box" data-percent="70"><span class="skill-box-label">Bootstrap</span><span class="skill-box-fill"></span></div>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">Backend</h3>
+            <div class="skill-boxes">
+              <div class="skill-box" data-percent="70"><span class="skill-box-label">PHP</span><span class="skill-box-fill"></span></div>
+              <div class="skill-box" data-percent="55"><span class="skill-box-label">Node.js</span><span class="skill-box-fill"></span></div>
+              <div class="skill-box" data-percent="50"><span class="skill-box-label">Express</span><span class="skill-box-fill"></span></div>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">Database</h3>
+            <div class="skill-boxes">
+              <div class="skill-box" data-percent="75"><span class="skill-box-label">MySQL</span><span class="skill-box-fill"></span></div>
+              <div class="skill-box" data-percent="60"><span class="skill-box-label">SQLite</span><span class="skill-box-fill"></span></div>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">IoT &amp; Tools</h3>
+            <div class="skill-boxes">
+              <div class="skill-box" data-percent="70"><span class="skill-box-label">Arduino</span><span class="skill-box-fill"></span></div>
+              <div class="skill-box" data-percent="65"><span class="skill-box-label">ESP32</span><span class="skill-box-fill"></span></div>
+              <div class="skill-box" data-percent="75"><span class="skill-box-label">Figma</span><span class="skill-box-fill"></span></div>
+              <div class="skill-box" data-percent="65"><span class="skill-box-label">WordPress</span><span class="skill-box-fill"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">— EDUCATION</span>
+          <h2 class="section-title">Where I've Studied</h2>
+          <p class="section-subtitle">The path that got me here.</p>
+        </div>
+        <div class="edu-timeline">
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-card">
+              <span class="edu-year">2022 &ndash; Present</span>
+              <h3 class="edu-title">B.E. Electronics, Communication &amp; Information Engineering</h3>
+              <span class="edu-place">Advanced College of Engineering and Management, Kalanki</span>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-card">
+              <span class="edu-year">2020 &ndash; 2022</span>
+              <h3 class="edu-title">+2 Science (Physical)</h3>
+              <span class="edu-place">Kathmandu BernHardt Secondary School</span>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="edu-card">
+              <span class="edu-year">&mdash; 2020</span>
+              <h3 class="edu-title">Secondary School</h3>
+              <span class="edu-place">Gyanodaya Secondary School, Kalanki</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">— EXPERIENCE</span>
+          <h2 class="section-title">Where I've Worked</h2>
+          <p class="section-subtitle">Professional and freelance experience.</p>
+        </div>
+        <div class="experience-card">
+          <div class="exp-header">
+            <div>
+              <h3 class="exp-title">Freelance Web Developer</h3>
+              <span class="exp-tag">Ongoing</span>
+              <span class="exp-tag exp-tag--muted">Self-employed</span>
+            </div>
+          </div>
+          <p class="exp-desc">Building web applications and IoT solutions for clients.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">— PROJECTS</span>
+          <h2 class="section-title">Things I've Built</h2>
+          <p class="section-subtitle">A few projects that kept me busy.</p>
+        </div>
+        <div class="project-card">
+          <div class="project-card-bg"></div>
+          <div class="project-card-content">
+            <h3 class="project-title">SEMIC | Canteen Management System</h3>
+            <p class="project-desc">Handles ordering, inventory tracking, and payments for school and college canteens. Built because the canteen at my college was chaos and someone had to fix it.</p>
+            <div class="project-tags">
+              <span>Web Dev</span>
+              <span>Database</span>
+              <span>UI/UX</span>
+            </div>
+            <a href="https://github.com/krischalpathaak-cmd" class="btn btn--primary" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="btn btn--outline"><i class="fas fa-eye"></i> View</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">— SERVICES</span>
+          <h2 class="section-title">What I Offer</h2>
+          <p class="section-subtitle">Services I provide to help bring your ideas to life.</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-globe"></i></div>
+            <h3 class="service-title">Web Development</h3>
+            <p class="service-desc">Custom websites and web applications built with modern frameworks. From landing pages to full-stack applications.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-microchip"></i></div>
+            <h3 class="service-title">IoT Solutions</h3>
+            <p class="service-desc">Embedded systems design and development using Arduino, ESP32, and other microcontrollers for smart applications.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-pencil-ruler"></i></div>
+            <h3 class="service-title">UI/UX Design</h3>
+            <p class="service-desc">Clean, user-friendly interfaces designed with a focus on usability and modern aesthetic principles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>&copy; 2026 Krischal Pathak. Built in Nepal.</span>
+        <div class="footer-social">
+          <a href="https://github.com/krischalpathaak-cmd" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/pathakkrischal/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/share/1LYrqgDnLX/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
