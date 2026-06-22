@@ -60,69 +60,6 @@
     }, 300);
   });
 
-  /* ─── CLOCK ─── */
-  function updateClock() {
-    const now = new Date();
-    let h = now.getHours();
-    const ampm = h >= 12 ? 'PM' : 'AM';
-    h = h % 12 || 12;
-    const m = String(now.getMinutes()).padStart(2, '0');
-    const display = $('#clockDisplay');
-    const suffix = $('.clock-suffix');
-    if (display) display.textContent = `${h}:${m}`;
-    if (suffix) suffix.textContent = ampm;
-  }
-  updateClock();
-  setInterval(updateClock, 10000);
-
-  /* ─── DRAGGABLE STATUS CARD ─── */
-  const statusCard = $('.status-card');
-  if (statusCard) {
-    let isDragging = false;
-    let startX, startY, origLeft, origTop;
-
-    function getCardRect() { return statusCard.getBoundingClientRect(); }
-
-    function onStart(e) {
-      const touch = e.touches ? e.touches[0] : e;
-      isDragging = true;
-      const rect = getCardRect();
-      startX = touch.clientX;
-      startY = touch.clientY;
-      origLeft = rect.left;
-      origTop = rect.top;
-      statusCard.style.right = 'auto';
-      statusCard.style.left = origLeft + 'px';
-      statusCard.style.top = origTop + 'px';
-      statusCard.style.bottom = 'auto';
-      statusCard.style.transition = 'none';
-    }
-
-    function onMove(e) {
-      if (!isDragging) return;
-      const touch = e.touches ? e.touches[0] : e;
-      e.preventDefault();
-      const dx = touch.clientX - startX;
-      const dy = touch.clientY - startY;
-      statusCard.style.left = (origLeft + dx) + 'px';
-      statusCard.style.top = (origTop + dy) + 'px';
-    }
-
-    function onEnd() {
-      if (!isDragging) return;
-      isDragging = false;
-      statusCard.style.transition = '';
-    }
-
-    statusCard.addEventListener('mousedown', onStart);
-    document.addEventListener('mousemove', onMove);
-    document.addEventListener('mouseup', onEnd);
-
-    statusCard.addEventListener('touchstart', onStart, { passive: true });
-    document.addEventListener('touchmove', onMove, { passive: false });
-    document.addEventListener('touchend', onEnd);
-  }
-
   /* ─── SCROLL — ACTIVE NAV ─── */
   let ticking = false;
   window.addEventListener('scroll', () => {
